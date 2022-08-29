@@ -1,0 +1,117 @@
+[
+  {
+    "field": "Vulnerabilities",
+    "payloadField": "Vulnerabilities",
+    "type": ["Cardinality"]
+  },
+  {
+    "field": "Issuer ID",
+    "payloadField": "IssuerId",
+    "type": ["Terms", "Cardinality"],
+    "hasValue": true
+  },
+  {
+    "field": "Issuer Name",
+    "payloadField": "IssuerName",
+    "type": ["Terms", "Cardinality"],
+    "hasValue": true
+  },
+  {
+    "field": "Issuer Country",
+    "payloadField": "IssuerCountry",
+    "type": ["Terms", "Cardinality"],
+    "hasValue": true
+  },
+  {
+    "field": "Publish Date",
+    "payloadField": "PublishDateRange",
+     "type": ["DateHistogram"],
+     "hasValue": true
+  },
+  {
+    "field": "Modification Date",
+    "payloadField": "ModificationDateRange",
+    "type": ["DateHistogram"],
+    "hasValue": true
+  },
+  {
+    "field": "Severity Range",
+    "payloadField": "SeverityRange",
+    "type": ["Range"]
+  },
+  {
+    "field": "Severity Level",
+    "payloadField": "SeverityLevel",
+    "type": ["Terms", "Cardinality"]
+  },
+  {
+    "field": "Product Name",
+    "payloadField": "ProductName",
+    "type": ["Terms", "Cardinality"],
+    "hasValue": true
+  },
+  {
+    "field": "Vendor Name",
+    "payloadField": "VendorName",
+    "type": ["Terms", "Cardinality"],
+    "hasValue": true
+  },
+  {
+    "field": "User Interaction Required?",
+    "payloadField": "IsUserInteractionRequired",
+    "type": ["Terms", "Cardinality"]
+  },
+  {
+    "field": "Is Fix Available?",
+    "payloadField": "IsFixAvailable",
+    "type": ["Terms", "Cardinality"]
+  },
+  {
+    "field": "Is Exploit Available?",
+    "payloadField": "IsExploitAvailable",
+    "type": ["Terms", "Cardinality"]
+  },
+  {
+    "field": "Confidentiality Impact",
+    "payloadField": "ConfidentialityImpact",
+    "type": ["Terms", "Cardinality"]
+  },
+  {
+    "field": "Integrity Impact",
+    "payloadField": "IntegrityImpact",
+    "type": ["Terms", "Cardinality"]
+  },
+  {
+    "field": "Availability Impact",
+    "payloadField": "AvailabilityImpact",
+    "type": ["Terms", "Cardinality"]
+  },
+  {
+    "field": "Attack Vector",
+    "payloadField": "AttackVector",
+    "type": ["Terms", "Cardinality"]
+  },
+  {
+    "field": "Attack Complexity",
+    "payloadField": "AttackComplexity",
+    "type": ["Terms", "Cardinality"]
+  },
+  {
+    "field": "Weaknesses",
+    "payloadField": "Weakness",
+    "type": ["Terms", "Cardinality"],
+    "hasValue": true
+  },
+  {
+    "field": "Weakness: Affected Resource",
+    "payloadField": "WeaknessAffectedResource",
+    "type": ["Terms", "Cardinality"],
+    "hasValue": true
+  },
+  {
+    "field": "Weakness: Platform",
+    "payloadField": "WeaknessPlatform",
+    "type": ["Terms", "Cardinality"],
+    "hasValue": true
+  }
+]
