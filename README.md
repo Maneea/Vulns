@@ -1,9 +1,10 @@
 # VulnView
 
-## API Project
+## SPA Project
+Make sure you install all the dependencies (`npm install`). Then, build the project (`npm run build`). Afterwards, copy the content of the directory `Spa/dist` to `Web/Static/Spa`
 
-1. Run the web API project: `dotnet run --project ./Api`
+## Web Project
+Fill in the blanks in `appsettings.json.example` then rename it to `appsettings.json`. If the project was not migrated to a relational database, then do so using Entity Framework (`dotnet ef database update -s Web -p Infrastructure`). Finally, run the project `dotnet run --project ./Web`
 
-### TODO
-
-* Use Systemd-style logging. You might want to look into `Microsoft.Extensions.Hosting.Systemd` & `Serilog`.
+## Orchestrator Project
+Do the same steps outlined in the Web Project section.
